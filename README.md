@@ -39,7 +39,7 @@ Si prefieres no usar `Flask-SQLAlchemy`, puedo adaptar la app para usar la libre
 
 ## Resultados
 
-- Captura 1 — Petición desde el cliente al endpoint `/api/generate` 
+- Captura 1 — Petición desde el cliente la api RandomUser 
 ![alt text](assets/image2.png)
 
 
