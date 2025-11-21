@@ -39,10 +39,6 @@ Si prefieres no usar `Flask-SQLAlchemy`, puedo adaptar la app para usar la libre
 
 ## Resultados
 
-Aquí puedes añadir capturas de pantalla que muestren las peticiones realizadas a la API externa y las respuestas recogidas por el servidor.
-
-Sugerencias de capturas (usa estos marcadores para mantener la documentación organizada):
-
 - Captura 1 — Petición desde el cliente al endpoint `/api/generate` 
 ![alt text](assets/image2.png)
 
