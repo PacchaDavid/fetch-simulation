@@ -19,7 +19,7 @@ Guías y tutoriales recomendados:
 
 ## Instalación del proyecto
 
-Comandos rápidos (PowerShell) — ejemplo para Windows:
+Comandos rápidos (PowerShell) — ejemplo para Windows (Asumiendo que se ha clonado previamente el repositorio en su máquina):
 
 ```pwsh
 # Crear y activar un entorno virtual
@@ -50,3 +50,6 @@ Si prefieres no usar `Flask-SQLAlchemy`, puedo adaptar la app para usar la libre
 - Captura 3 — Registros en la base de datos después de la inserción (ej. salida de `GET /api/users`)
 ![alt text](assets/image1.png)
 
+
+- Caputra 4 - Dev Tools
+![alt text](assets/image3.png)
