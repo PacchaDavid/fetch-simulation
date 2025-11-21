@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD con Fetch y LocalStorage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h1>CRUD de Usuarios</h1>
+
+    <!-- Formulario para Crear y Editar -->
+    <div class="form-container">
+        <h3 id="formTitle">Agregar Nuevo Usuario</h3>
+        <input type="hidden" id="userId"> <!-- Campo oculto para guardar el ID al editar -->
+        
+        <div class="form-group">
+            <label for="userName">Nombre:</label>
+            <input type="text" id="userName" placeholder="Ej: Juan Perez" required>
+        </div>
+        <div class="form-group">
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" placeholder="Ej: juan@ejemplo.com" required>
+        </div>
+
+        <button id="btnSave" class="btn-primary" onclick="guardarUsuario()">Guardar Usuario</button>
+        <button id="btnCancel" class="btn-warning" onclick="limpiarFormulario()" style="display:none;">Cancelar Edición</button>
+    </div>
+
+    <!-- Botón para recargar desde la API -->
+    <button class="btn-reset" id="btnGenerate" onclick="generarUsuario()">✨ Generar usuario desde Random User</button>
+    <button class="btn-reset" id="btnReload" onclick="cargarUsuarios()">🔄 Recargar usuarios</button>
+    <br><br>
+
+    <!-- Tabla de Datos -->
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se insertarán las filas dinámicamente -->
+        </tbody>
+    </table>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
